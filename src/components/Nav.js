@@ -1,5 +1,5 @@
 import React from "react";
-import gif from "../x-logo.gif";
+import gif from "../gif/x-logo.gif";
 
 //navbar component, grabbing what we passed through in Container.js
 function Nav({ current, updateCurrent }) {
