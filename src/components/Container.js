@@ -1,29 +1,27 @@
 import React, { useState } from "react";
 import Nav from './Nav';
-import homepage from './pages/homepage';
-import about from './pages/about';
-import contact from './pages/contact';
-import portfolio from './pages/portfolio';
+import Homepage from './pages/homepage';
+import About from './pages/about';
+import Contact from './pages/contact';
+import Portfolio from './pages/portfolio';
 
-function Container() {
+const Container = () => {
     //setting pageState
     //default 'Home'
-    const [current, setCurrent] = useState('Home')
+    const [current, setCurrent] = useState('homepage')
 
     //conditional to render specific page
     const displayContent = () => {
         if (current === 'homepage') {
-            return <homepage></homepage>
+            return <Homepage />;
         };
         if (current === 'about') {
-            return <about></about>
+            return <About />;
         };
         if (current === 'portfolio') {
-            return <portfolio></portfolio>
-        };
-        if (current === 'contact') {
-            return <contact></contact>
-        };
+            return <Portfolio />;
+        }
+        return <Contact />;
     };
 
     //passing setter to component, wrappin in arrow fn so won't excute as populated
