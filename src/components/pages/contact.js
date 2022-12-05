@@ -3,7 +3,9 @@ import emailGif from "../../gif/at.gif";
 import avatarGif from "../../gif/nod.gif"
 import writeGif from "../../gif/write.gif"
 
-const contact = () => {
+
+
+const Contact = () => {
     return (
         <>
             <div class="card">
@@ -55,4 +57,4 @@ const contact = () => {
     );
 };
 
-export default contact
+export default Contact

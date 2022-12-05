@@ -34,7 +34,7 @@ const homepage = () => {
                     <a href="#sample">@bulmaio</a>.
                     <a href="#sample">#css</a> <a href="#sample">#responsive</a>
                     <br />
-                    <time datetime="2022-12-4">last updated: 4 Dec 2022</time>
+                    <time dateTime="2022-12-4">last updated: 4 Dec 2022</time>
                 </div>
             </div>
         </div>

@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bulma/css/bulma.min.css';
+import "@creativebulma/bulma-collapsible/dist/css/bulma-collapsible.min.css";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
