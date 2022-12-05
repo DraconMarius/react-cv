@@ -33,7 +33,7 @@ const Container = () => {
     //component, passing our getter and setter to nav bar
     return (
         <div>
-            <nav class="navbar is-transparent">
+            <nav className="navbar is-transparent">
                 <Nav current={current} updateCurrent={updateCurrent}></Nav>
             </nav>
             {displayContent()}

@@ -5,45 +5,42 @@ import gif from "../gif/x-logo.gif";
 function Nav({ current, updateCurrent }) {
     return (
         <>
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#homepage">
+            <div className="navbar-brand">
+                <a className="navbar-item" href="#homepage">
                     <img src={gif} alt="Mari-Cat" />
                 </a>
-                <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                <div className="navbar-burger" data-target="navbarExampleTransparentExample">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
             {/* navbar link shoould update the current state in Container.js */}
-            <div id="navbar-menu" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="#homepage"
+            <div id="navbar-menu" className="navbar-menu">
+                <div className="navbar-start">
+                    <a className="navbar-item" href="#homepage"
                         onClick={() => updateCurrent('homepage')}>
                         Home
                     </a>
-                    <a class="navbar-item" href="#about"
+                    <a className="navbar-item" href="#about"
                         onClick={() => updateCurrent('about')}>
                         About
                     </a>
-                    <a class="navbar-item" href="#portfolio"
+                    <a className="navbar-item" href="#portfolio"
                         onClick={() => updateCurrent('portfolio')}>
                         Portfolio
                     </a>
-                    <a class="navbar-item" href="#contact"
+                    <a className="navbar-item" href="#contact"
                         onClick={() => updateCurrent('contact')}>
                         Contact
                     </a>
                 </div>
 
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="field is-grouped">
-                            <p class="control">
-                                <a class="button is-primary" href="./resume.pdf">
-                                    <span class="icon">
-                                        <i class="fas fa-download"></i>
-                                    </span>
+                <div className="navbar-end">
+                    <div className="navbar-item">
+                        <div className="field is-grouped">
+                            <p className="control">
+                                <a className="button is-primary" href="./resume.pdf">
                                     <span>Resume</span>
                                 </a>
                             </p>
