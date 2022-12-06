@@ -11,13 +11,19 @@ const Footer = () => {
                 <div className="content has-text-centered">
                     <p className="row is-justify-content-space-between">
                         <span className="icon is-large">
-                            <img src={gitHub} href="https://github.com/DraconMarius" alt='github' />
+                            <a href="https://github.com/DraconMarius">
+                                <img src={gitHub} alt='github' />
+                            </a>
                         </span>
                         <span className="icon is-large">
-                            <img src={linkedIn} alt='linkedin' />
+                            <a href="https://www.linkedin.com/in/mari-ma-70771585">
+                                <img src={linkedIn} alt='linkedin' />
+                            </a>
                         </span>
                         <span className="icon is-large">
-                            <img src={camera} alt='photography portfolio' height='40' />
+                            <a href="https://marikma.wixsite.com/portfolio">
+                                <img src={camera} alt='photography portfolio' height='40' />
+                            </a>
                         </span>
                     </p>
                     <p className="row has-text-centered" >
