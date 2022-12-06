@@ -5,6 +5,7 @@ import bulmaCollapsible from '@creativebulma/bulma-collapsible';
 // import {  } from '@fontawesome/free-solid-svg-icons'
 // import cattwo from '../../assets/img/cat1.png';
 import catthree from '../../assets/img/cat2.png';
+import icon from '../../assets/gif/icon.gif'
 
 const Portfolio = () => {
 
@@ -45,8 +46,7 @@ const Portfolio = () => {
                                 </p>
                                 <a href="#collapsible-card1" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
                                     <span className="icon">
-                                        +
-                                    </span>
+                                        <img src={icon} alt="icon" />                                    </span>
                                 </a>
                             </header>
                             <div id="collapsible-card1" className="is-collapsible">
@@ -86,8 +86,7 @@ const Portfolio = () => {
                                 </p>
                                 <a href="#collapsible-card2" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
                                     <span className="icon">
-                                        +
-                                    </span>
+                                        <img src={icon} alt="icon" />                                    </span>
                                 </a>
                             </header>
                             <div id="collapsible-card2" className="is-collapsible">
@@ -129,7 +128,7 @@ const Portfolio = () => {
                                 </p>
                                 <a href="#collapsible-card3" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
                                     <span className="icon">
-                                        +
+                                        <img src={icon} alt="icon" />
                                     </span>
                                 </a>
                             </header>
@@ -168,7 +167,7 @@ const Portfolio = () => {
                                 </p>
                                 <a href="#collapsible-card4" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
                                     <span className="icon">
-                                        +
+                                        <img src={icon} alt="icon" />
                                     </span>
                                 </a>
                             </header>
@@ -210,7 +209,7 @@ const Portfolio = () => {
                                 </p>
                                 <a href="#collapsible-card5" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
                                     <span className="icon">
-                                        +
+                                        <img src={icon} alt="icon" />
                                     </span>
                                 </a>
                             </header>
