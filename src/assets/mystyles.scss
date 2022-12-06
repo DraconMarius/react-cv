@@ -1,0 +1,24 @@
+@charset "utf-8";
+// Import Bulma first
+@import '../node_modules';
+// Import Component main Sass File
+@import '~@creativebulma/bulma-collapsible';
+//import google font
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,500;1,200&display=swap');
+//custom colors
+$darkGrey: #1e1e2b;
+$indigo: #4858d2;
+$mustard: #e4a656;
+$iceblue: #92dee8;
+$white: #ffffff;
+$pinkred: #ce1e8d;
+
+//bulma global var
+$family-sans-serif: 'Roboto Mono', monospace;
+$grey-dark: $white;
+$grey-light: $indigo;
+$primary: $mustard;
+$link: $iceblue;
+$red: $pinkred;
+
+$body-background-color: $iceblue;

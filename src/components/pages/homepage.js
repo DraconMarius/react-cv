@@ -1,4 +1,5 @@
 import React from 'react';
+import face from '../../assets/gif/face.jpg';
 
 const Homepage = () => {
     return (
@@ -7,7 +8,7 @@ const Homepage = () => {
                 <div className="media">
                     <div className="media-left">
                         <figure className="image is-96x96">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder" />
+                            <img src={face} alt="Placeholder" />
                         </figure>
                     </div>
                     <div className="media-content">

@@ -1,7 +1,7 @@
 import React from "react";
-import linkedIn from "../gif/linkedIn.png";
-import gitHub from "../gif/gitHub.png";
-import camera from "../gif/camera.png";
+import linkedIn from "../assets/gif/linkedIn.png";
+import gitHub from "../assets/gif/gitHub.png";
+import camera from "../assets/gif/camera.png";
 
 //footer element with social links and crediting lordicon for animated icons
 const Footer = () => {

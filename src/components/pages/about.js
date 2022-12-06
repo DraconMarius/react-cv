@@ -1,4 +1,5 @@
 import React from 'react';
+import face from '../../assets/gif/face.jpg';
 
 const About = () => {
     return (
@@ -6,12 +7,12 @@ const About = () => {
             <div className="card-content">
                 <div className="media">
                     <div className="media-left">
-                        <figure className="image is-512x512">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder" />
+                        <figure className="image is-96x96">
+                            <img src={face} alt="face pic" width="20%" />
                         </figure>
                     </div>
                 </div>
-
+                <br />
                 <div className="content">
                     After graduated with a BS in Arts Management, Mari dedicated a year of service with ArtistYear in Philadelphia. He integrated Photography as an art elective, and led students to create their own personal portfolio to share their work and views with their communities during the 2016 - 2017 school year.
                     <br />

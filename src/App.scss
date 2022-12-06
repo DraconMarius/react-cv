@@ -1,0 +1,48 @@
+@charset "utf-8";
+// Import Bulma first
+// @import '../node_modules/bulma/bulma.sass';
+
+//import google font
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,500;1,200&display=swap');
+//custom colors
+$darkGrey: #1e1e2b;
+$indigo: #4858d2;
+$mustard: #ffa024;
+$iceblue: #92dee8;
+$mustGrey: #ffde93;
+$customwhite: #ffffff;
+$pinkred: #ce1e8d;
+
+//bulma global var
+$family-monospace: 'RobotoMono', monospace;
+$family-sans-serif: 'RobotoMono', monospace;
+$grey-dark: $customwhite;
+$grey-darker: $customwhite;
+$black: $customwhite;
+$black-bis: $customwhite;
+$black-ter: $customwhite;
+$grey: $customwhite;
+$white: $darkGrey;
+$white-bis: $darkGrey;
+$white-ter: $darkGrey;
+$grey-light: $indigo;
+$grey-lighter: $indigo;
+$grey-lightest: $indigo;
+
+$primary: $mustard;
+$link: $mustard;
+$red: $pinkred;
+
+$body-background-color: $darkGrey;
+$background: $darkGrey;
+
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/elements/_all.sass';
+@import '../node_modules/bulma/sass/components/_all.sass';
+@import '../node_modules/bulma/sass/layout/_all.sass';
+@import '../node_modules/bulma/sass/form/_all.sass';
+@import '../node_modules/bulma/sass/grid/_all.sass';
+@import '../node_modules/bulma/sass/helpers/_all.sass';
+// Import Component main Sass File
+@import '~@creativebulma/bulma-collapsible';

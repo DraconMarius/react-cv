@@ -1,7 +1,7 @@
 import React from "react";
-import emailGif from "../../gif/at.gif";
-import avatarGif from "../../gif/nod.gif"
-import writeGif from "../../gif/write.gif"
+import emailGif from "../../assets/gif/at.gif";
+import avatarGif from "../../assets/gif/nod.gif"
+import writeGif from "../../assets/gif/write.gif"
 //importing and using react hook form for easy form validation
 import { useForm } from "react-hook-form";
 
