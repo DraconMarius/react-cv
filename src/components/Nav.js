@@ -3,20 +3,29 @@ import gif from "../assets/gif/x-logo.gif";
 
 //navbar component, grabbing what we passed through in Container.js
 function Nav({ current, updateCurrent }) {
+
+    //react state for burger
+    // const [isActive, setActive] = React.useState(false);
+
+    const toggle = () => {
+        document.getElementById('navbar-menu').classList.toggle('is-active');
+    };
+
     return (
         <>
             <div className="navbar-brand">
                 <a className="navbar-item" href="#homepage">
                     <img src={gif} alt="Mari-Cat" />
                 </a>
-                <div className="navbar-burger" data-target="navbarExampleTransparentExample">
+
+                <div role="button" onClick={toggle} className="navbar-burger" data-target="navbarExampleTransparentExample">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
             {/* navbar link shoould update the current state in Container.js */}
-            <div id="navbar-menu" className="navbar-menu">
+            <div id="navbar-menu" className={`navbar-menu`}>
                 <div className="navbar-start">
                     <a className="navbar-item" href="#homepage"
                         onClick={() => updateCurrent('homepage')}>
