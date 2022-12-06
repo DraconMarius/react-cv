@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Nav from './Nav';
+import Footer from './Footer'
 import Homepage from './pages/homepage';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Portfolio from './pages/portfolio';
+
 
 const Container = () => {
     //setting pageState
@@ -37,7 +39,9 @@ const Container = () => {
                 <Nav current={current} updateCurrent={updateCurrent}></Nav>
             </nav>
             {displayContent()}
+            <Footer />
         </div >
+
     );
 };
 
