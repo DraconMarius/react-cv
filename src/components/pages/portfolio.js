@@ -3,6 +3,8 @@ import "@creativebulma/bulma-collapsible/dist/css/bulma-collapsible.min.css";
 import bulmaCollapsible from '@creativebulma/bulma-collapsible';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {  } from '@fontawesome/free-solid-svg-icons'
+// import cattwo from '../../assets/img/cat1.png';
+import catthree from '../../assets/img/cat2.png';
 
 const Portfolio = () => {
 
@@ -23,6 +25,14 @@ const Portfolio = () => {
 
     return (
         <>
+            <br />
+            <div className="column">
+                <div className="has-text-centered">
+                    <figure className="image is-96x96 is-inline-block">
+                        <img src={catthree} alt="cat pic" width="20%" />
+                    </figure>
+                </div>
+            </div>
             <br />
             <br />
             <div className="columns is-mobile is-centered">

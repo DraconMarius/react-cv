@@ -1,6 +1,6 @@
 import React from "react";
 import gif from "../assets/gif/x-logo.gif";
-
+import resume from "../assets/Ma2022.pdf";
 //navbar component, grabbing what we passed through in Container.js
 function Nav({ current, updateCurrent }) {
 
@@ -49,7 +49,7 @@ function Nav({ current, updateCurrent }) {
                     <div className="navbar-item">
                         <div className="field is-grouped">
                             <p className="control">
-                                <a className="button is-primary is-outlined" href="./resume.pdf">
+                                <a className="button is-primary is-outlined" href={resume}>
                                     <span>Resume</span>
                                 </a>
                             </p>

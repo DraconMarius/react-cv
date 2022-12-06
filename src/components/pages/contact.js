@@ -67,6 +67,7 @@ const Contact = () => {
                             <button className="button is-link is-light">Cancel</button>
                         </div>
                     </div>
+                    <br />
                 </form>
             </div>
         </>
