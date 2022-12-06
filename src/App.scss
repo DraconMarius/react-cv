@@ -14,8 +14,8 @@ $customwhite: #ffffff;
 $pinkred: #ce1e8d;
 
 //bulma global var
-$family-monospace: 'RobotoMono', monospace;
-$family-sans-serif: 'RobotoMono', monospace;
+$family-monospace: 'Roboto Mono', monospace;
+$family-sans-serif: 'Roboto Mono', monospace;
 $grey-dark: $customwhite;
 $grey-darker: $customwhite;
 $black: $customwhite;
@@ -25,13 +25,14 @@ $grey: $customwhite;
 $white: $darkGrey;
 $white-bis: $darkGrey;
 $white-ter: $darkGrey;
-$grey-light: $indigo;
+$grey-light: $darkGrey;
 $grey-lighter: $indigo;
-$grey-lightest: $indigo;
+$grey-lightest: $darkGrey;
 
 $primary: $mustard;
 $link: $mustard;
 $red: $pinkred;
+$info: $indigo;
 
 $body-background-color: $darkGrey;
 $background: $darkGrey;

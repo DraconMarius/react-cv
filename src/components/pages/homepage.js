@@ -19,8 +19,8 @@ const Homepage = () => {
                     </div>
                     <div className="media-content">
                         <br />
-                        <p className="title is-4">Mari K. Ma's Portfolio</p>
-                        <p className="subtitle is-6">Full Stack Developer | `Human-First` Problem Solver | Cat Dad  </p>
+                        <p className="title is-4 is-family-code">Mari K. Ma's Portfolio</p>
+                        <p className="subtitle is-6 has-text-warning">Full Stack Developer | `Human-First` Problem Solver | Cat Dad  </p>
                     </div>
                 </div>
             </div>
