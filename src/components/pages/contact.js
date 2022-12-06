@@ -34,7 +34,7 @@ const Contact = () => {
                         <div className="control has-icons-left">
                             <input className="input" defaultValue="" {...register("email", { pattern: { value: /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/, message: `not a valid email` }, required: true })} type="text" placeholder="sample@gmail.com" />
                             {/* errors will return when field validation fails  */}
-                            {errors.email && <span className="has-text-danger">This field is required</span>}
+                            {errors.email && <span className="has-text-danger">Valid email is required</span>}
 
                             <span className="icon is-small is-left">
                                 <img src={emailGif} alt="icon"></img>
