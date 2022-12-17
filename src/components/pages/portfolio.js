@@ -9,6 +9,38 @@ import icon from '../../assets/gif/icon.gif'
 
 const Portfolio = () => {
 
+    //add general work here, special work gets their own customized ones
+    const werks = [
+        {
+            name: "Geo-Chart-Tracker",
+            desc: "a front-end application utilizing leaflet.js and last.fm to visualize chart toppers around the world.",
+            demo: "https://github.com/JCaloca/Geo-Chart-Tracker/raw/main/assets/images/demo.gif",
+            gitLink: "https://github.com/JCaloca/Geo-Chart-Tracker",
+            depLink: "https://jcaloca.github.io/Geo-Chart-Tracker/"
+        },
+        {
+            name: "ReadMe Generator",
+            desc: "Simple CLI ReadMe Genearator with shield.io badges",
+            demo: "https://github.com/DraconMarius/ReadMe-Generator/raw/main/assets/demo.gif",
+            gitLink: "https://github.com/DraconMarius/ReadMe-Generator/"
+        },
+        {
+            name: "WeatherApp",
+            desc: "A simple web app that fetches data from openWeather API's current weather and 5 day forecasts.",
+            demo: "https://github.com/DraconMarius/WeatherApp/raw/main/demo.gif",
+            gitLink: "https://github.com/DraconMarius/WeatherApp",
+            depLink: "https://draconmarius.github.io/WeatherApp/",
+        },
+        {
+            name: "DayPlanner",
+            desc: "A simple javscript app to store events based on hours of typical work day.",
+            demo: "https://github.com/DraconMarius/DayPlanner/raw/main/Assets/demo.png",
+            gitLink: "https://github.com/DraconMarius/DayPlanner",
+            depLink: "https://draconmarius.github.io/DayPlanner/",
+        }
+    ]
+
+
     // export default className Collapsibles extends React.Component {
     //     componentDidMount() {
     //       this.collapsibles = bulmaCollapsible.attach(".is-collapsible", {
@@ -44,12 +76,12 @@ const Portfolio = () => {
                                 <p className="card-header-title">
                                     Purple wAIve
                                 </p>
-                                <a href="#collapsible-card1" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
+                                <a href="#collapsible-cardA" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
                                     <span className="icon">
                                         <img src={icon} alt="icon" />                                    </span>
                                 </a>
                             </header>
-                            <div id="collapsible-card1" className="is-collapsible">
+                            <div id="collapsible-cardA" className="is-collapsible">
                                 <div className="row">
                                     <div className="columns is-mobile is-centered">
                                         <div className="card-content">
@@ -72,178 +104,64 @@ const Portfolio = () => {
                                 </div>
                                 <footer className="card-footer">
                                     <p className="card-footer-item">
-                                        <span>
+                                        <span className="button is-primary is-outlined">
                                             <a href="https://github.com/duffylaura/purple_wAIve">View on GitHub</a>
                                         </span>
-                                    </p>
-                                </footer>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <header className="card-header">
-                                <p className="card-header-title">
-                                    Geo Chart Tracker
-                                </p>
-                                <a href="#collapsible-card2" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
-                                    <span className="icon">
-                                        <img src={icon} alt="icon" />                                    </span>
-                                </a>
-                            </header>
-                            <div id="collapsible-card2" className="is-collapsible">
-                                <div className="row">
-                                    <div className="columns is-mobile is-centered">
-                                        <div className="card-content">
-                                            <p className="title is-4">
-                                                Geo-Chart-Tracker,
-                                                <br />
-                                                <br />
-                                                a front-end application utilizing leaflet.js and last.fm to visualize chart toppers around the world.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="columns is-mobile is-centered">
-                                        <div className="column is-half">
-                                            <div className="card-image">
-                                                <img src="https://github.com/JCaloca/Geo-Chart-Tracker/raw/main/assets/images/demo.gif" alt="demo.gif" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <footer className="card-footer">
-                                    <p className="card-footer-item">
-                                        <span>
-                                            <a href="https://github.com/JCaloca/Geo-Chart-Tracker">View on GitHub</a>
+                                        <span className="button is-primary is-outlined">
+                                            <a href="https://purple-waive.herokuapp.com">Deployed Link</a>
                                         </span>
                                     </p>
                                 </footer>
                             </div>
                         </div>
+                        {/* mapped array of werks */}
+                        {werks.map((werk, index) => (
 
-                        <div className="card">
-                            <header className="card-header">
-                                <p className="card-header-title">
-                                    ReadMe Generator
-                                </p>
-                                <a href="#collapsible-card3" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
-                                    <span className="icon">
-                                        <img src={icon} alt="icon" />
-                                    </span>
-                                </a>
-                            </header>
-                            <div id="collapsible-card3" className="is-collapsible">
-                                <div className="row">
-                                    <div className="columns is-mobile is-centered">
-                                        <div className="card-content">
-                                            <p className="title is-4">
-                                                Simple CLI ReadMe Genearator with shield.io badges
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="columns is-mobile is-centered">
-                                        <div className="column is-half">
-                                            <div className="card-image">
-                                                <img src="https://github.com/DraconMarius/ReadMe-Generator/raw/main/assets/demo.gif" alt="demo.gif" />
+                            <div className="card" key={index}>
+                                <header className="card-header">
+                                    <p className="card-header-title">
+                                        {werk.name}
+                                    </p>
+                                    <a href={`#collapsible-card${index}`} data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
+                                        <span className="icon">
+                                            <img src={icon} alt="icon" />                                    </span>
+                                    </a>
+                                </header>
+                                <div id={`collapsible-card${index}`} className="is-collapsible">
+                                    <div className="row">
+                                        <div className="columns is-mobile is-centered">
+                                            <div className="card-content">
+                                                <p className="title is-4">
+                                                    {werk.desc}
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <footer className="card-footer">
-                                    <p className="card-footer-item">
-                                        <span>
-                                            <a href="https://github.com/DraconMarius/ReadMe-Generator/">View on GitHub</a>
-                                        </span>
-                                    </p>
-                                </footer>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <header className="card-header">
-                                <p className="card-header-title">
-                                    WeatherApp
-                                </p>
-                                <a href="#collapsible-card4" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
-                                    <span className="icon">
-                                        <img src={icon} alt="icon" />
-                                    </span>
-                                </a>
-                            </header>
-                            <div id="collapsible-card4" className="is-collapsible">
-                                <div className="row">
-                                    <div className="columns is-mobile is-centered">
-                                        <div className="card-content">
-                                            <p className="title is-4">
-                                                WeatherApp,
-                                                <br />
-                                                <br />
-                                                A simple web app that fetches data from open weather api's current weather and 5 day forecasts.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="columns is-mobile is-centered">
-                                        <div className="column is-half">
-                                            <div className="card-image">
-                                                <img src="https://github.com/DraconMarius/WeatherApp/raw/main/demo.gif" alt="demo.gif" />
+                                    <div className="row">
+                                        <div className="columns is-mobile is-centered">
+                                            <div className="column is-half">
+                                                <div className="card-image">
+                                                    <img src={werk.demo} alt="demo.gif" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <footer className="card-footer">
+                                        <p className="card-footer-item">
+                                            <span className="button is-primary is-outlined">
+                                                <a href={werk.gitLink}>View on GitHub</a>
+                                            </span>
+                                            {(werk.depLink) ? <span className="button is-primary is-outlined">
+                                                <a href={werk.depLink}>Deployed Link</a>
+                                            </span> : <></>}
+                                        </p>
+                                    </footer>
                                 </div>
-                                <footer className="card-footer">
-                                    <p className="card-footer-item">
-                                        <span>
-                                            <a href="https://github.com/DraconMarius/WeatherApp">View on GitHub</a>
-                                        </span>
-                                    </p>
-                                </footer>
                             </div>
-                        </div>
-                        <div className="card">
-                            <header className="card-header">
-                                <p className="card-header-title">
-                                    DayPlanner
-                                </p>
-                                <a href="#collapsible-card5" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
-                                    <span className="icon">
-                                        <img src={icon} alt="icon" />
-                                    </span>
-                                </a>
-                            </header>
-                            <div id="collapsible-card5" className="is-collapsible">
-                                <div className="row">
-                                    <div className="columns is-mobile is-centered">
-                                        <div className="card-content">
-                                            <p className="title is-4">
-                                                DayPlanner,
-                                                <br />
-                                                <br />
-                                                A simple JavaScript App to store events based on hours of typical work day.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="columns is-mobile is-centered">
-                                        <div className="column is-half">
-                                            <div className="card-image">
-                                                <img src="https://github.com/DraconMarius/DayPlanner/raw/main/Assets/demo.png" alt="demo.gif" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <footer className="card-footer">
-                                    <p className="card-footer-item">
-                                        <span>
-                                            <a href="https://github.com/DraconMarius/DayPlanner">View on GitHub</a>
-                                        </span>
-                                    </p>
-                                </footer>
-                            </div>
-                        </div>
+                        ))}
+
+
+
                     </div>
                 </div>
             </div>
