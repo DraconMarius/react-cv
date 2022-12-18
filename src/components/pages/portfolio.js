@@ -12,8 +12,15 @@ const Portfolio = () => {
     //add general work here, special work gets their own customized ones
     const werks = [
         {
+            name: "Love-is-blur",
+            desc: "A full-stack MERN application with Apollo graphQL, socket.io, and react",
+            demo: "https://raw.githubusercontent.com/DraconMarius/love-is-blur/main/client/gifs/blur-is-done.gif?token=GHSAT0AAAAAABYXXRIHYG5GVHVDLQUUME4WY46NFDQ",
+            gitLInk: "https://github.com/DraconMarius/love-is-blur",
+            depLink: "https://love-is-blur.herokuapp.com/"
+        },
+        {
             name: "Geo-Chart-Tracker",
-            desc: "a front-end application utilizing leaflet.js and last.fm to visualize chart toppers around the world.",
+            desc: "A front-end application utilizing leaflet.js and last.fm to visualize chart toppers around the world.",
             demo: "https://github.com/JCaloca/Geo-Chart-Tracker/raw/main/assets/images/demo.gif",
             gitLink: "https://github.com/JCaloca/Geo-Chart-Tracker",
             depLink: "https://jcaloca.github.io/Geo-Chart-Tracker/"
@@ -102,7 +109,7 @@ const Portfolio = () => {
                                         <div className="card-content">
                                             <p className="title is-4">
                                                 <img className="m-0 p-0" src="https://github.com/duffylaura/purple_wAIve/raw/main/public/assets/333-loader-4-8.gif" alt="icon" width="50"></img>
-                                                Purple wAIve, a Full-Stack AI image generator for music lovers
+                                                A Full-Stack AI image generator for music lovers
                                                 <img className="m-0 p-0" src="https://github.com/duffylaura/purple_wAIve/raw/main/public/assets/333-loader-4-3.gif" alt="icon" width="50"></img>
                                             </p>
                                         </div>
