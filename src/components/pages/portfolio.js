@@ -5,7 +5,7 @@ import bulmaCollapsible from '@creativebulma/bulma-collapsible';
 // import {  } from '@fontawesome/free-solid-svg-icons'
 // import cattwo from '../../assets/img/cat1.png';
 import catthree from '../../assets/img/cat2.png';
-import icon from '../../assets/gif/icon.gif'
+// import icon from '../../assets/gif/icon.gif'
 
 const Portfolio = () => {
 
@@ -56,6 +56,13 @@ const Portfolio = () => {
         });
     }, [])
 
+    const Style = {
+        lordicon: {
+            width: "50px",
+            height: "50px"
+        }
+    }
+
     return (
         <>
             <br />
@@ -78,7 +85,15 @@ const Portfolio = () => {
                                 </p>
                                 <a href="#collapsible-cardA" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
                                     <span className="icon">
-                                        <img src={icon} alt="icon" />                                    </span>
+                                        {/* <img src={icon} alt="icon" />                                     */}
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hursldrn.json"
+                                            trigger="morph"
+                                            colors="primary:#7166ee,secondary:#e8b730"
+                                            state="morph"
+                                            style={Style.lordicon}>
+                                        </lord-icon>
+                                    </span>
                                 </a>
                             </header>
                             <div id="collapsible-cardA" className="is-collapsible">
@@ -124,7 +139,14 @@ const Portfolio = () => {
                                     </p>
                                     <a href={`#collapsible-card${index}`} data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
                                         <span className="icon">
-                                            <img src={icon} alt="icon" />                                    </span>
+                                            <lord-icon
+                                                src="https://cdn.lordicon.com/hursldrn.json"
+                                                trigger="morph"
+                                                colors="primary:#7166ee,secondary:#e8b730"
+                                                state="morph"
+                                                style={Style.lordicon}>
+                                            </lord-icon>
+                                        </span>
                                     </a>
                                 </header>
                                 <div id={`collapsible-card${index}`} className="is-collapsible">
