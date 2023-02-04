@@ -8,8 +8,13 @@ import { useForm } from "react-hook-form";
 
 const Contact = () => {
     //destructuring and getting methods from useForm
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    //destructuring data from submitting, and activate mailto: sine this is front end only for now
+    const onSubmit = data => {
+        const { user, email, message } = data;
+        document.location.href = `mailto:07.scuffs_peaks@icloud.com?subject=${user}&body=${message}
+                                                                                                from:${user} (${email})`;
+    };
 
 
     return (
@@ -64,7 +69,16 @@ const Contact = () => {
                             <button className="button is-link" type="submit">Submit</button>
                         </div>
                         <div className="control">
-                            <button className="button is-link is-light">Cancel</button>
+                            <button className="button is-link is-light"
+                                type="clear"
+                                onClick={() =>
+                                    reset({
+                                        user: '',
+                                        email: '',
+                                        message: '',
+                                    })
+                                }
+                            >Cancel</button>
                         </div>
                     </div>
                     <br />
