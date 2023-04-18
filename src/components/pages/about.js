@@ -1,7 +1,7 @@
 import React from 'react';
 import catone from '../../assets/img/cat.png';
 import cattwo from '../../assets/img/cat1.png';
-import resume from "../../assets/Ma2022.pdf";
+import resume from "../../assets/Ma2023.pdf";
 
 
 const About = () => {
