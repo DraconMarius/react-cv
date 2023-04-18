@@ -12,6 +12,12 @@ const Portfolio = () => {
     //add general work here, special work gets their own customized ones
     const werks = [
         {
+            name: "Bear2Obsidian",
+            desc: "Node.js script to migrate Bear Markdown Notes to Obsidian",
+            demo: "https://github.com/DraconMarius/bear2obsidian/raw/main/aseets/demo.gif",
+            gitLink: "https://github.com/DraconMarius/bear2obsidian",
+        },
+        {
             name: "Love-is-blur",
             desc: "A full-stack MERN application with Apollo graphQL, socket.io, and react",
             demo: "https://raw.githubusercontent.com/DraconMarius/love-is-blur/main/client/gifs/blur-is-done.gif?token=GHSAT0AAAAAABYXXRIHYG5GVHVDLQUUME4WY46NFDQ",

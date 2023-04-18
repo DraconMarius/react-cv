@@ -22,10 +22,10 @@ const About = () => {
                     After graduated with a BS in Arts Management, Mari dedicated a year of service with ArtistYear in Philadelphia. He integrated Photography as an art elective, and led students to create their own personal portfolio to share their work and views with their communities during the 2016 - 2017 school year.
                     <br />
                     <br />
-                    In 2020, Mari was contracted as a Recruiting Coordinator @ Google via Adecco, and relocated back to the Bay Area. He was later promoted as a supervisor, who oversaw a team of 35+ coordinators during the transition from Remote to Hybrid work.
+                    In 2020, Mari was contracted as a Recruiting Coordinator @ Google via Adecco, and relocated back to the Bay Area. He was later promoted as a supervisor, and supported a team of 35+ coordinators during the transition from Remote to Hybrid work.
                     <br />
                     <br />
-                    Currently completing the Berkeley Full-Stack Coding Bootcamp to further his technical knowledge and horizon.
+                    After comlpeted a FullStack Coding Bootcamp at the end of 2022, Mari is eager and excited to apply his unique blend of people, technical, and creative skills for the nexct challenge.
                     <br />
                     <br />
 
@@ -47,6 +47,7 @@ const About = () => {
                         <span className="tag is-info">SASS</span>
                         <span className="tag is-info">IndexDB</span>
                         <span className="tag is-info">webpack</span>
+                        <span className="tag is-info">MUI</span>
                     </div>
                     <span className="has-text-danger">Back-End</span>
                     <div className="tags">
