@@ -25,7 +25,7 @@ const About = () => {
                     In 2020, Mari was contracted as a Recruiting Coordinator @ Google via Adecco, and relocated back to the Bay Area. He was later promoted as a supervisor, and supported a team of 35+ coordinators during the transition from Remote to Hybrid work.
                     <br />
                     <br />
-                    After comlpeted a FullStack Coding Bootcamp at the end of 2022, Mari is eager and excited to apply his unique blend of people, technical, and creative skills for the nexct challenge.
+                    After comlpeted a FullStack Coding Bootcamp at the end of 2022, Mari is eager and excited to apply his unique blend of people, technical, and creative skills for their next challenge.
                     <br />
                     <br />
 

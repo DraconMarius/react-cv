@@ -19,7 +19,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className="card">
+            <div className="card mx-4">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="field">
                         <label className="label">Name</label>

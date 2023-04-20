@@ -9,8 +9,26 @@ import catthree from '../../assets/img/cat2.png';
 
 const Portfolio = () => {
 
-    //add general work here, special work gets their own customized ones
-    const werks = [
+    //add highlight work here
+    const specials = [
+        {
+            name: "Chaos Tarot",
+            desc: "MERN App to generate tarot reading and card from OpenAI API",
+            demo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1681946376/demo_cmrgtx.gif",
+            gitLink: "https://github.com/DraconMarius/chaos-tarot",
+            depLink: "https://chaos-tarot.herokuapp.com",
+            iconOne: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1681947119/yellowCandle_dz9ont.gif",
+            iconTwo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1681947054/2229-candle-outline_rwrin1.gif"
+        },
+        {
+            name: "Purple wAIve",
+            desc: "A Full-Stack AI image generator for music lovers",
+            demo: "https://github.com/duffylaura/purple_wAIve/raw/main/public/assets/gif%20of%20create%20page.gif",
+            gitLink: "https://github.com/duffylaura/purple_wAIve",
+            depLink: "https://purple-waive.herokuapp.com",
+            iconOne: "https://github.com/duffylaura/purple_wAIve/raw/main/public/assets/333-loader-4-3.gif",
+            iconTwo: "https://github.com/duffylaura/purple_wAIve/raw/main/public/assets/333-loader-4-8.gif"
+        },
         {
             name: "Bear2Obsidian",
             desc: "Node.js script to migrate Bear Markdown Notes to Obsidian",
@@ -53,6 +71,11 @@ const Portfolio = () => {
         }
     ]
 
+    //add general work here, special work gets their own customized ones
+    // const werks = [
+
+    // ]
+
 
     // export default className Collapsibles extends React.Component {
     //     componentDidMount() {
@@ -90,15 +113,16 @@ const Portfolio = () => {
             <br />
             <div className="columns is-mobile is-centered">
                 <div className="column is-four-fifths">
-                    <div ref={collapsiblesRef} id="1">
-                        <div className="card">
-                            <header className="card-header">
-                                <p className="card-header-title">
-                                    Purple wAIve
-                                </p>
-                                <a href="#collapsible-cardA" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
-                                    <span className="icon">
-                                        {/* <img src={icon} alt="icon" />                                     */}
+                    <div ref={collapsiblesRef}>
+                        {specials.map((specialswork, index) => (
+                            <div className="card" key={index}>
+                                <header className="card-header">
+                                    <p className="card-header-title">
+                                        {specialswork.name}
+                                    </p>
+                                    <a href={`#collapsible-card${index}`} data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
+
+                                        {/* <img src={icon} alt="icon" />*/}
                                         <lord-icon
                                             src="https://cdn.lordicon.com/hursldrn.json"
                                             trigger="morph"
@@ -106,44 +130,47 @@ const Portfolio = () => {
                                             state="morph"
                                             style={Style.lordicon}>
                                         </lord-icon>
-                                    </span>
-                                </a>
-                            </header>
-                            <div id="collapsible-cardA" className="is-collapsible">
-                                <div className="row">
-                                    <div className="columns is-mobile is-centered">
-                                        <div className="card-content">
-                                            <p className="title is-4">
-                                                <img className="m-0 p-0" src="https://github.com/duffylaura/purple_wAIve/raw/main/public/assets/333-loader-4-8.gif" alt="icon" width="50"></img>
-                                                A Full-Stack AI image generator for music lovers
-                                                <img className="m-0 p-0" src="https://github.com/duffylaura/purple_wAIve/raw/main/public/assets/333-loader-4-3.gif" alt="icon" width="50"></img>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="columns is-mobile is-centered">
-                                        <div className="column is-half">
-                                            <div className="card-image">
-                                                <img src="https://github.com/duffylaura/purple_wAIve/raw/main/public/assets/gif%20of%20create%20page.gif" alt="demo.gif" />
+
+                                    </a>
+                                </header>
+                                <div id={`collapsible-card${index}`} className="is-collapsible">
+                                    <div className="row">
+                                        <div className="columns is-mobile is-centered">
+                                            <div className="card-content">
+                                                <p className="title is-4">
+                                                    {(specialswork.iconOne) ? <img className="m-0 p-0" src={specialswork.iconOne} alt="icon" width="50">
+                                                    </img> : <></>}
+                                                    {specialswork.desc}
+                                                    {(specialswork.iconTwo) ? <img className="m-0 p-0" src={specialswork.iconTwo} alt="icon" width="50">
+                                                    </img> : <></>}
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="row">
+                                        <div className="columns is-mobile is-centered">
+                                            <div className="column is-half">
+                                                <div className="card-image">
+                                                    <img src={specialswork.demo} alt="demo.gif" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <footer className="card-footer">
+                                        <p className="card-footer-item">
+                                            <span className="button is-primary is-outlined">
+                                                <a href={specialswork.gitLink}>View on GitHub</a>
+                                            </span>
+                                            {(specialswork.depLink) ? <span className="button is-primary is-outlined">
+                                                <a href={specialswork.depLink}>Deployed Link</a>
+                                            </span> : <></>}
+                                        </p>
+                                    </footer>
                                 </div>
-                                <footer className="card-footer">
-                                    <p className="card-footer-item">
-                                        <span className="button is-primary is-outlined">
-                                            <a href="https://github.com/duffylaura/purple_wAIve">View on GitHub</a>
-                                        </span>
-                                        <span className="button is-primary is-outlined">
-                                            <a href="https://purple-waive.herokuapp.com">Deployed Link</a>
-                                        </span>
-                                    </p>
-                                </footer>
                             </div>
-                        </div>
+                        ))}
                         {/* mapped array of werks */}
-                        {werks.map((werk, index) => (
+                        {/* {werks.map((werk, index) => (
 
                             <div className="card" key={index}>
                                 <header className="card-header">
@@ -193,7 +220,7 @@ const Portfolio = () => {
                                     </footer>
                                 </div>
                             </div>
-                        ))}
+                        ))} */}
 
 
 
@@ -206,29 +233,3 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-<div className="card">
-    <header className="card-header">
-        <p className="card-header-title">
-            Geo-Chart-Tracker
-        </p>
-        <a href="#collapsible-card2" data-action="collapse" className="card-header-icon is-hidden-fullscreen" aria-label="more options">
-            <span className="icon">
-                +
-            </span>
-        </a>
-    </header>
-    <div id="collapsible-card2" className="is-collapsible">
-        <div className="card-content">
-            <p className="title is-4">
-                Geo-Chart-Tracker, a front-end application utilizing leaflet.js and last.fm to visualize chart toppers around the world.
-            </p>
-        </div>
-        <footer className="card-footer">
-            <p className="card-footer-item">
-                <span>
-                    View on <a href="https://github.com/JCaloca/Geo-Chart-Tracker">GitHub</a>
-                </span>
-            </p>
-        </footer>
-    </div>
-</div>
