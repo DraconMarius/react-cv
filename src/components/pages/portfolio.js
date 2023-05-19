@@ -14,11 +14,11 @@ const Portfolio = () => {
         {
             name: "Chaos Tarot",
             desc: "MERN App to generate tarot reading and card from OpenAI API",
-            demo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1681946376/demo_cmrgtx.gif",
+            demo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1682499010/card-generate-demo.gif",
             gitLink: "https://github.com/DraconMarius/chaos-tarot",
             depLink: "https://chaos-tarot.herokuapp.com",
-            iconOne: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1681947119/yellowCandle_dz9ont.gif",
-            iconTwo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1681947054/2229-candle-outline_rwrin1.gif"
+            iconOne: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1681947119/tarot/yellowCandle_dz9ont.gif",
+            iconTwo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1681947054/tarot/2229-candle-outline_rwrin1.gif"
         },
         {
             name: "Purple wAIve",
@@ -98,6 +98,13 @@ const Portfolio = () => {
             height: "50px"
         }
     }
+    const introStyle = {
+        lordicon: {
+            width: "25px",
+            height: "25px",
+            margin: "-5px"
+        }
+    }
 
     return (
         <>
@@ -107,10 +114,22 @@ const Portfolio = () => {
                     <figure className="image is-96x96 is-inline-block">
                         <img src={catthree} alt="cat pic" width="20%" />
                     </figure>
+                    <br />
+                    <br />
+                    <br />
+                    <p className="has-text-warning-light">
+                        click on the
+                        <lord-icon
+                            src="https://cdn.lordicon.com/hursldrn.json"
+                            trigger="morph"
+                            colors="primary:#7166ee,secondary:#e8b730"
+                            state="morph"
+                            style={introStyle.lordicon}>
+                        </lord-icon>
+                        to see individual project
+                    </p>
                 </div>
             </div>
-            <br />
-            <br />
             <div className="columns is-mobile is-centered">
                 <div className="column is-four-fifths">
                     <div ref={collapsiblesRef}>
