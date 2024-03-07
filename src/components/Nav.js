@@ -1,6 +1,6 @@
 import React from "react";
 import gif from "../assets/gif/x-logo.gif";
-import resume from "../assets/Ma2023.pdf";
+import resume from "../assets/Ma2024.pdf";
 //navbar component, grabbing what we passed through in Container.js
 function Nav({ current, updateCurrent }) {
 

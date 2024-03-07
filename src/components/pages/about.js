@@ -1,7 +1,7 @@
 import React from 'react';
 import catone from '../../assets/img/cat.png';
 import cattwo from '../../assets/img/cat1.png';
-import resume from "../../assets/Ma2023.pdf";
+import resume from "../../assets/Ma2024.pdf";
 
 
 const About = () => {
@@ -64,7 +64,7 @@ const About = () => {
                         <span className="tag is-danger">graphQL</span>
 
                     </div>
-                    <time className="has-text-primary" dateTime="2022-12-4">last updated: 4 Dec 2022</time>
+                    {/* <time className="has-text-primary" dateTime="2022-12-4">last updated: 4 Dec 2022</time> */}
                 </div>
 
             </div>
