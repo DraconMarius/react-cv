@@ -12,8 +12,17 @@ const Portfolio = () => {
     //add highlight work here
     const specials = [
         {
+            name: "Alchemy NFT API Demo",
+            desc: "A GUI demo-ing the capability of Alchemy's NFT API SDK and endpoints, with EIPS-6963 wallet providers",
+            demo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1715732058/samples/code%20snippet%20and%20screenshots/Untitled_May1020247_27PM-ezgif.com-crop_rje7ge.gif",
+            gitLink: "https://github.com/DraconMarius/nftapi-demo",
+            depLink: "https://alchemy-nftapi-399720c6d6f7.herokuapp.com/",
+            iconOne: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1715741422/samples/code%20snippet%20and%20screenshots/android-chrome-192x192_dthlss.png",
+            iconTwo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1715741422/samples/code%20snippet%20and%20screenshots/android-chrome-192x192_dthlss.png"
+        },
+        {
             name: "Chaos Tarot",
-            desc: "MERN App to generate tarot reading and card from OpenAI API",
+            desc: "MERN App to generate tarot reading and card from OpenAI API (Pending update to newer GPT Model)",
             demo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1682499010/card-generate-demo.gif",
             gitLink: "https://github.com/DraconMarius/chaos-tarot",
             depLink: "https://chaos-tarot.herokuapp.com",
