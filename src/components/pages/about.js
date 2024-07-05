@@ -25,7 +25,7 @@ const About = () => {
                     In 2020, Mari was contracted as a Recruiting Coordinator @ Google via Adecco, and relocated back to the Bay Area. He was later promoted as a supervisor, and supported a team of 35+ coordinators during the transition from Remote to Hybrid work.
                     <br />
                     <br />
-                    After comlpeted a FullStack Coding Bootcamp at the end of 2022, Mari is eager and excited to apply his unique blend of people, technical, and creative skills for their next challenge.
+                    After comlpeted a FullStack Coding Bootcamp at the end of 2022, Mari is currently contracted as a fullstack engineer building internal demos. He is eager to apply his unique blend of people, technical, and creative skills for their next challenge.
                     <br />
                     <br />
 
@@ -48,6 +48,7 @@ const About = () => {
                         <span className="tag is-info">IndexDB</span>
                         <span className="tag is-info">webpack</span>
                         <span className="tag is-info">MUI</span>
+                        <span className="tag is-info">evergreenUI</span>
                     </div>
                     <span className="has-text-danger">Back-End</span>
                     <div className="tags">

@@ -12,8 +12,17 @@ const Portfolio = () => {
     //add highlight work here
     const specials = [
         {
+            name: "Alchemy Token API Demo",
+            desc: "A demo for the Alchemy's Token and Transact API",
+            demo: "https://github.com/DraconMarius/tokenapi-demo/raw/main/client/src/assets/txfilter.gif",
+            gitLink: "https://github.com/DraconMarius/tokenapi-demo",
+            depLink: "https://alchemy-tokenapi-3249c3de8b20.herokuapp.com/",
+            iconOne: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1715741422/samples/code%20snippet%20and%20screenshots/android-chrome-192x192_dthlss.png",
+            iconTwo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1715741422/samples/code%20snippet%20and%20screenshots/android-chrome-192x192_dthlss.png"
+        },
+        {
             name: "Alchemy NFT API Demo",
-            desc: "A GUI demo-ing the capability of Alchemy's NFT API SDK and endpoints, with EIPS-6963 wallet providers",
+            desc: "A demo of Alchemy's NFT API SDK and endpoints, with EIPS-6963 wallet providers",
             demo: "https://res.cloudinary.com/dbjhly3lm/image/upload/v1715732069/samples/code%20snippet%20and%20screenshots/AlchemyNFTAPIDemo-ezgif.com-video-to-gif-converter_nv0b9p.gif",
             gitLink: "https://github.com/DraconMarius/nftapi-demo",
             depLink: "https://alchemy-nftapi-399720c6d6f7.herokuapp.com/",
@@ -165,13 +174,14 @@ const Portfolio = () => {
                                     <div className="row">
                                         <div className="columns is-mobile is-centered">
                                             <div className="card-content">
-                                                <p className="title is-4">
+                                                <div className="level title is-4">
+
                                                     {(specialswork.iconOne) ? <img className="m-0 p-0" src={specialswork.iconOne} alt="icon" width="50">
                                                     </img> : <></>}
-                                                    {specialswork.desc}
+                                                    <span>{specialswork.desc}</span>
                                                     {(specialswork.iconTwo) ? <img className="m-0 p-0" src={specialswork.iconTwo} alt="icon" width="50">
                                                     </img> : <></>}
-                                                </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
